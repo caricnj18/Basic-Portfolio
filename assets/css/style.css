@@ -1,153 +1,180 @@
-/*stylesheet for index.html, contact.html, portfolio.html*/
+/*stylesheet for index.html, contact.html, portfolio.html WK01 HW01*/
 
+* { /*not sure what * means */
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    background-color: lightgray;
+    color: #777;
+}
 
-header{
-background-color: #ffffff;
-border-color: #cccccc;
-font-family: Georgia, Times, Times New Roman, serif;
-position:absolute;
-top: 3px;
-left: 125px;
-width: 20%;
-display: block;
-border-bottom:75px;
+/*the entire top bar name and navbar included*/
+#topbar {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    padding: 18px;
+}
+
+/*the name on the top*/
+.name {
+    text-align: center;
+    background-color: #4aaaa5;
+    float: left;
+    width: 250px;
+    height: 80px;
+    font-size: 25px;
+    position: fixed;
+    top: 0px;
+    left: 125px;
+    line-height: 95px;
+    color: #fff;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.horizontalNAV {
+    float: right;
+    margin-top: 25px;
+    margin-right: 5px;
+   
+}
+
+.horizontalNAV a {
+    padding-left:5px;
+    display: inline-block;
+    line-height: 18px;
+    color: #999;
+    text-transform: uppercase;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.horizontalNAV a:hover {
+    color: #4aaaa5;
 }
 
 h1{
-color: white;
-background-color: #4aaaa5;
-padding: 30px;
-margin: 30px;
-text-align: center;
-border-color: #cccccc;
-font-family: Georgia, Times, Times New Roman, serif;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    background-color: #4aaaa5;
+    font-size: 30px;
+    color: white;
 }
 
-h2{
-color: teal;
-border-bottom: 3px solid gray;
-font-family: Georgia, Times, Times New Roman, serif;
-}
-
-h3{
-border-bottom: 3px solid gray;
-text-align: center;
-color: teal;
-font-family: Georgia, Times, Times New Roman, serif;
-}
-
-h4{
-border: 2px solid #4aaaa5;
-color: black;
-padding: 30px;
-margin: 30px;
-text-align: center;
-}
-
-body{
-background-color:rgb(240, 240, 240);
-border: 2px solid #dddddd;
-font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-margin-left: auto;
-margin-right: auto;
-}
-
-/*horizontal navigation styles*/
-nav.horizontalNAV{
-float: right;
-text-align: center;
-background-color: rgb(240, 240, 240);
-font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-padding: 25px;
-position: absolute;
-top: 35px;
-right: 150px;
-display: block;
-}
-
-nav.horizontalNAV li{
-text-transform: uppercase;
-display: inline;
-color: LightGray;
-font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-}
-
-nav.horizontalNAV li  a {
-    background-color: white;
-    color: #777777;
-}
-
-nav.horizontalNAV a:hover {
+h2 {
     color: #4aaaa5;
-    background-color:#777777;
- }
-
-section{
-width: 650px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 22px;
+    border-bottom: 2px solid gray;
+    padding-bottom: 20px;
+    line-height: 49px;
 }
 
-article {
-border: 2px solid #dddddd;
-padding: 75px;
-margin: 50px;
-background-color: #ffffff;
-color: #777777;
-position: absolute;
-top: 150px;
-width: 35%;
-float:left;
-height:450px;
-overflow: scroll;
+h3 {
+    border-bottom: 2px solid gray;
+    text-align: center;
+    color: #4aaaa5;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+   
 }
 
-aside {
-float: right;
-height: 30%;
-width: 270px;
-background-color: #ffffff;
-border:2px solid #dddddd;
-font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-color: #777777;
-position:absolute;
-top: 150px;
-right: 250px;
+/*both 'about me' box & 'projects' box*/ 
+article, form {
+    width: 100%;
+    float: left;
+    max-width: 650px;
+    padding: 30px;
+    padding-top: 130px;
+    margin-left: 45px;
+    background: #fff;
+    border: 1px solid #ddd;
+    overflow: auto;
+}
+
+
+
+/*inside items of 'project' box*/
+.project{
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+}
+
+.project h4 {
+    position: absolute;
+    bottom: 10px;
+    padding: 5px;
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+    background-color: #4aaaa5;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
+
+
+aside { /* entire sidebar*/
+    float: right;
+    height: 30%;
+    width: 290px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    margin-top: 105px;
+    margin-right: 250px;
+    padding: 15px;
+    max-width: 270px;
+    margin-bottom: 20px;
+   
+}
+
+.smedia{ /*each item in sidebar*/
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    margin-right: 5px;
 
 }
 
-form{
-border: 2px solid #dddddd;
-padding: 30px;
-margin: 75px;
-float: left;
-background-color:#ffffff;
-color: #777777;
-position: absolute;
-top: 100px;
-left: 120px;
+textarea{
+    height: 125px;
+    width: 450px;
 }
 
 /*button styles*/
-form p{
-text-align:center;
-}
-
-input [type="submit"] {
-display:inline;
-float:none;
-
+input, textarea {
+    display: inline;
+    float: none;
+    background-color: #4aaaa5;
+    color: #fff;
+    cursor: pointer;
 }
 
 footer {
-color: #777777;
-background-color: #666666;
-border-top: 10px solid #4aaaa5;
-text-align: center;
-font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-width: 100%;
-position:absolute;
-bottom:0px;
-margin-top: 35px;
-padding-bottom: 50px;
+    color: #ccc;;
+    background-color: #666666;
+    border-top: 9px solid #4aaaa5;
+    text-align: center;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    margin-top: 35px;
+    padding-bottom: 50px;
+    clear: both;
+    font-size: 12px;
 }
-
